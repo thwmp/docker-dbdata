@@ -1,11 +1,4 @@
-FROM ubuntu:trusty
-
-# Set environment variables
-ENV DEBIAN_FRONTEND noninteractive
-
-# Install packages
-RUN apt-get update
-RUN apt-get -y install nano
+FROM busybox:latest
 
 # Prepare directories
 RUN mkdir -p /etc/mysql
@@ -15,4 +8,4 @@ RUN mkdir -p /var/lib/mysql
 VOLUME ["/etc/mysql", "/var/lib/mysql"]
 
 # Run bash
-CMD ["/bin/bash"]
+CMD ["/bin/sh"]
