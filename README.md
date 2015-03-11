@@ -15,7 +15,7 @@ locally by executing the following command inside the docker-dbdata folder:
 
 To run a container with the image to be used by another container (e.g. `morganhjk/mariadb`), execute the following command:
 
-  docker run --name somedb_data morganhjk/dbdata
+  	docker run --name somedb_data morganhjk/dbdata
   
 To run the above container with an interactive shell, execute the following command:
 
