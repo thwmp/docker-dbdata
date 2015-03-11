@@ -1,5 +1,5 @@
 # docker-dbdata
-Out-of-the-box Ubuntu image (14.04 LTS Trusty Tahr) set up to store data for MySQL databases.
+Out-of-the-box BusyBox image set up to store data for MySQL databases.
 
 ## Building the image ##
 
@@ -17,6 +17,6 @@ To run a container with the image to be used by another container (e.g. `morganh
 
     docker run --name somedb_data morganhjk/dbdata
   
-To run the above container with an interactive shell, execute the following command:
+You can use the `morganhjk/rmit` image to inspect the data in the container above by executing the following command:
 
-    docker run -i -t somedb_data
+    docker run --rm -it --volumes-from somedb_data morganhjk/rmit
