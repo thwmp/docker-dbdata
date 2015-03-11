@@ -9,7 +9,7 @@ If you don't want to pull the `morganhjk/dbdata` image from the [automated build
 (https://github.com/morganhjk/docker-dbdata) and build the image `morganhjk/dbdata`
 locally by executing the following command inside the docker-dbdata folder:
 	
-  docker build -t morganhjk/dbdata .
+  	docker build -t morganhjk/dbdata .
 
 ## Running the image ##
 
@@ -19,4 +19,4 @@ To run a container with the image to be used by another container (e.g. `morganh
   
 To run the above container with an interactive shell, execute the following command:
 
-  docker run -i -t somedb_data
+  	docker run -i -t somedb_data
