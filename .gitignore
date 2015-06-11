@@ -1,5 +1,5 @@
 # Created by https://www.gitignore.io
-# Ignores: Linux, Windows, Vim, Emacs, SublimeText, Archives
+# Ignores: Linux, Windows, Vim, Emacs, SublimeText, Notepad++, Archives
 
 ### Linux ###
 *~
@@ -91,6 +91,11 @@ tramp
 
 # sftp configuration file
 sftp-config.json
+
+
+### NotepadPP ###
+# Notepad++ backups #
+*.bak
 
 
 ### Archives ###
